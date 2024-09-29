@@ -1,0 +1,146 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color, #f0f0f0);
+    color: var(--text-color, #333);
+    line-height: 1.6;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+nav {
+    background: linear-gradient(90deg, #ff6b6b, #f7b42c);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+nav .burger {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* Toggle Button for Dark Mode */
+.toggle-bar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.toggle-bar .mode {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    padding: 50px 20px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile .profile-img {
+    border-radius: 50%;
+    width: 150px;
+    margin-right: 30px;
+}
+
+.bio-text {
+    max-width: 500px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+    color: #f7b42c;
+}
+
+/* Tech Stack Section */
+.tech-stack {
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.tech-stack .stack-imgs img {
+    width: 80px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-stack .stack-imgs img:hover {
+    transform: scale(1.2);
+}
+
+/* Projects Section */
+.projects {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    padding: 50px;
+    color: white;
+}
+
+.projects .project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .project-item {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 20px;
+
